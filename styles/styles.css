@@ -1,0 +1,385 @@
+
+/* body content */
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+  font-style: normal;    
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* first section */
+
+.section-1 {
+  position: relative;   
+  width: 1400px;
+  height: 700px;
+  border: 5px solid black;
+}
+
+.top {
+  border: 5px solid;
+  display: flex;
+}
+
+.center {    
+  text-align: center;
+}
+
+.fadeOut {
+  animation: fadeOut ease 8s infinite;
+  -webkit-animation: fadeOut ease 8s;
+  -moz-animation: fadeOut ease 8s;
+  -o-animation: fadeOut ease 8s;
+  -ms-animation: fadeOut ease 8s;
+}
+@keyframes fadeOut {
+0% {
+  opacity:1;
+}
+100% {
+  opacity:0;
+}
+}
+  
+@-moz-keyframes fadeOut {
+0% {
+  opacity:1;
+}
+100% {
+  opacity:0;
+}
+}
+  
+@-webkit-keyframes fadeOut {
+0% {
+  opacity:1;
+}
+100% {
+  opacity:0;
+}
+}
+  
+@-o-keyframes fadeOut {
+0% {
+  opacity:1;
+}
+100% {
+  opacity:0;
+}
+}
+  
+@-ms-keyframes fadeOut {
+0% {
+  opacity:1;
+}
+100% {
+  opacity:0;
+}
+}
+
+
+@-webkit-keyframes hvr-ripple-in {
+  100% {
+  top: 0;
+  right: 0;    
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+}
+}
+@keyframes hvr-ripple-in {
+  100% {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+}
+}
+.hvr-ripple-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-ripple-in:before {
+  content: '';
+  position: absolute;
+  border: #000000 solid 2px;
+  top: -12px;
+  right: -12px;
+  bottom:-12px;
+  left: -12px;
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.hvr-ripple-in:hover:before, .hvr-ripple-in:focus:before, .hvr-ripple-in:active:before {
+  -webkit-animation-name: hvr-ripple-in;
+  animation-name: hvr-ripple-in;
+}
+
+.click-animations .rep-btn {
+  position: relative;
+  margin: 20px ;
+  padding: 10px;
+  width: 50%;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: #5d4257;
+background-image: linear-gradient(315deg, #5d4257 0%, #a5c7b7 74%);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.click-animations .rep-btn:active {
+  transform: scale(0.95);
+}
+
+.text-all {
+  text-decoration: underline;
+  text-shadow: darkkhaki;
+}
+.section-1-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  justify-content: space-around;
+  align-items: center;
+}
+.h3-head {
+  font-weight: bolder;
+}
+.par-text {
+  font-style: oblique;
+}
+
+/* link */
+.nec-link {
+  color: black;
+  text-decoration: none;
+}
+.nec-link:visited {
+  color: chartreuse;
+}
+.nec-link:active :hover {
+  color: crimson; 
+}
+.nec-link:hover {
+  text-decoration: underline; 
+}
+
+.section-1-text-1,.section-1-text-2,.section-1-text-3,.section-1-text-4,.section-1-text-5,.section-1-text-6 {
+  background-color: none;
+  border: none;
+  font-size: 16px;
+  opacity: 0;
+  transition: 1s;
+}
+.section-1-text-1 {
+  position: relative;
+}
+.section-1-text-2 {
+  position: relative;
+}
+.section-1-text-3 {
+  position: relative;
+}
+.section-1-text-4 {
+  position: relative;
+}
+.section-1-text-5 {
+  position: relative;
+}
+.section-1-text-6 {
+  position: relative;
+}
+
+@keyframes color-animation {
+	0% { color: rgb(88, 3, 3); }
+  25% { color: rgb(90, 19, 19); }
+  50% { color: rgb(58, 15, 15); }
+  75% { color: rgb(54, 4, 4); }
+  100% { color: rgb(48, 0, 0); }
+}
+
+.color-animation  {
+	animation-name: color-animation;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.section-1-text-1:hover,.section-1-text-2:hover,.section-1-text-3:hover,.section-1-text-4:hover,.section-1-text-5:hover,.section-1-text-6:hover
+ {opacity: 1}
+
+
+ @-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+/* second section */
+
+.section-2 {
+  position: relative;
+  width: 1400px;
+  height: 700px;
+  border: 5px double black;
+
+}
+
+@keyframes boxen {
+  0%   {background-color:red; left: 0px; top:0px;}
+  25%  {background-color:yellow; left:800px; top:0px;}
+  50%  {background-color:blue; left:800px; top:800px;}
+  75%  {background-color:green; left:0px; top:800px;}
+  100% {background-color:red; left:0px; top:0px;}
+  }
+.box {
+  position: relative;
+  opacity: 50%;
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: border-radius 4s;
+  animation-name: boxen;
+  animation-duration: 8s;
+}
+.box:hover {
+  border-radius: 100px;
+  transition: all 0.9s ease-in-out;
+  transition-delay: 0.7s;
+}
+
+@keyframes pageTurn {
+  0% {
+    transform: translate3d(0,0,0) scale(1, 1) translate(-50%, -50%);
+  }
+  50% {   
+    transform: translate3d(0,0,0) scale(-1 ,1) translate(-50%, -50%);
+  }
+  100% {
+    transform: translate3d(0,0,0) scale(1, 1) translate(-50%, -50%);
+  }
+}
+  
+  .pageTurn {  
+    animation-name: pageTurn; 
+    animation-duration: 1s;
+    animation-iteration-count: 5; 
+    animation-timing-function: linear;  
+  }
+
+  .hvr-float-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-float-shadow:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+  }
+  .hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+  }
+  .hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  }
+
